@@ -1,0 +1,48 @@
+### 获取用户列表
+GET http://localhost:8330/browser/status
+Accept: application/json
+
+### 获取单个用户
+GET http://localhost:8330/browser/action
+Accept: application/json
+
+### 创建新用户
+POST http://localhost:8330/init_sandbox
+Content-Type: application/json
+
+{"secrets": {"test": "test"}}
+
+
+### 创建文件
+POST http://localhost:8330/text_editor
+Content-Type: application/json
+
+{
+  "command": "view",
+  "path": "test1.txt",
+  "sudo": false
+}
+
+### view
+POST http://localhost:8330/text_editor
+Content-Type: application/json
+
+{
+  "command": "view",
+  "path": "test1.txt",
+  "sudo": false
+}
+
+### write
+POST http://localhost:8330/text_editor
+Content-Type: application/json
+
+{
+  "command": "write",
+  "path": "test1.txt",
+  "sudo": false,
+  "append": true,
+  "file_text": "hello world>>>>"
+}
+
+

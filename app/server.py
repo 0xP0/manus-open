@@ -200,6 +200,7 @@ async def text_editor_endpoint(action: TextEditorAction):
     """Execute a text editor action."""
     try:
         result = await text_editor.run_action(action)
+        print('result>>>>', result)
         return TextEditorActionResult(status="success", **result.dict())
     except Exception as e:
         logger.error(f"Error in text editor: {e}")

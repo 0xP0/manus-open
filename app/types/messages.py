@@ -29,7 +29,7 @@ class FileInfo(BaseModel):
     old_content: Optional[str] = None
 
 class TextEditorActionResult(CommonApiResult):
-    result: str
+    output: str
     file_info: Optional[FileInfo] = None
 
 class BrowserActionRequest(BaseModel):
