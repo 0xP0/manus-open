@@ -1,12 +1,12 @@
-### 获取用户列表
+### browser/status
 GET http://localhost:8330/browser/status
 Accept: application/json
 
-### 获取单个用户
+### browser/action
 GET http://localhost:8330/browser/action
 Accept: application/json
 
-### 创建新用户
+### init_sandbox
 POST http://localhost:8330/init_sandbox
 Content-Type: application/json
 
@@ -18,7 +18,7 @@ POST http://localhost:8330/text_editor
 Content-Type: application/json
 
 {
-  "command": "view",
+  "command": "create",
   "path": "test1.txt",
   "sudo": false
 }
