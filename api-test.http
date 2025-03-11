@@ -20,7 +20,8 @@ Content-Type: application/json
 {
   "command": "create",
   "path": "test1.txt",
-  "sudo": false
+  "sudo": false,
+  "file_text": "hello world>>>>"
 }
 
 ### view
@@ -42,7 +43,7 @@ Content-Type: application/json
   "path": "test1.txt",
   "sudo": false,
   "append": true,
-  "file_text": "hello world>>>>"
+  "file_text": "天王盖地虎"
 }
 
 
